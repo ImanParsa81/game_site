@@ -71,6 +71,7 @@
     font-size: 1rem;
     color: var(--text-dark-muted);
     margin-bottom: 1.5rem;
+    font-weight: 500;
 }
 
 @media (max-width: 767px) {
@@ -80,12 +81,16 @@
         display: flex;
         align-items: center;
         justify-content: center;
+
+        padding: 0px 10px;
+        line-height: 26px;
     }
 }
 
 @media (min-width: 480px) {
     .pars_hero_subtitle {
         font-size: 1.125rem;
+        line-height: 29px;
     }
 }
 
@@ -105,7 +110,7 @@
 .pars_hero_image {
     width: 100%;
     padding-top: 56.25%; /* 16:9 aspect ratio */
-    background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCelR329BYDmax3WCwHkx23_jLckXfcSp20isqRhjs-0lbMHAsC3mSjcgXEbsTHHf5zf1GiBCjf9W29_b6_hoDZfeR5tlDVRzTUF3HfWn_BStZ5ZxXntDYBTBXNX3gj9QBxlfnW3LfDb-gqt0ewmqASuEHRYv8d-bf2GqhDg4oWCjtcT9pU7WxhaNNWVxaGcf7WuV-pfjCFeKqwNpkzyXP5TsJAcraYUunyYV52LDW9MHSQiHcjQUMp1Cl63NJvLd3WnQjGD-_rLUY');
+    /*background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCelR329BYDmax3WCwHkx23_jLckXfcSp20isqRhjs-0lbMHAsC3mSjcgXEbsTHHf5zf1GiBCjf9W29_b6_hoDZfeR5tlDVRzTUF3HfWn_BStZ5ZxXntDYBTBXNX3gj9QBxlfnW3LfDb-gqt0ewmqASuEHRYv8d-bf2GqhDg4oWCjtcT9pU7WxhaNNWVxaGcf7WuV-pfjCFeKqwNpkzyXP5TsJAcraYUunyYV52LDW9MHSQiHcjQUMp1Cl63NJvLd3WnQjGD-_rLUY');*/
     background-size: cover;
     background-position: center;
     border-radius: 0.75rem;
@@ -128,7 +133,7 @@
 
 @media (min-width: 576px) {
     .pars_section_title {
-        text-align: left;
+        text-align: center;
     }
 }
 
@@ -178,7 +183,7 @@
 .pars_category_title {
     position: absolute;
     bottom: 1rem;
-    left: 1rem;
+    right: 1rem;
     color: var(--text-light);
     font-size: 1.125rem;
     font-weight: 700;

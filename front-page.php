@@ -7,37 +7,42 @@ get_header();
 
     <main class="pars_main">
         <div class="container">
+
             <!-- Hero Section -->
             <section class="pars_hero_section ">
                 <div class="row flex-column-reverse flex-md-row align-items-center">
                     <div class="col-12 col-md-6 text-center text-md-left">
-                        <h1 class="pars_hero_title">Learning Just Became an Adventure!</h1>
-                        <p class="pars_hero_subtitle">Fun educational games for grades 1-6 designed to make learning exciting.</p>
+
+                        <h1 class="pars_hero_title"><?= op_roboyad["home_page_text_title"] ?></h1>
+                        <p class="pars_hero_subtitle"><?= op_roboyad["home_page_text_description"] ?></p>
                         <div class="pars_hero_ctas">
-                            <button class="pars_cta_button">Explore Games</button>
-                            <button class="pars_cta_secondary">For Educators</button>
+                            <button class="pars_cta_button">ورود/ ثبت نام</button>
+                            <button class="pars_cta_secondary">درباره ما</button>
                         </div>
                     </div>
                     <div class="col-12 col-md-6">
-                        <div class="pars_hero_image" role="img" aria-label="Diverse group of children happily engaged with educational games on tablets."></div>
+                        <div
+                                style=" background-image: url('<?= op_roboyad["home_page_image_baner"]["url"] ?>'); "
+
+                                class="pars_hero_image" role="img" aria-label="Diverse group of children happily engaged with educational games on tablets."></div>
                     </div>
                 </div>
             </section>
 
             <!-- Grade/Subject Cards -->
             <section class="pars_categories_section py-5">
-                <h2 class="pars_section_title">Choose Your Challenge</h2>
+                <h2 class="pars_section_title">انتخاب پایه تحصیلی</h2>
                 <div class="row g-3">
                     <div class="col-6 col-md-4">
                         <a href="#" class="pars_category_card">
                             <div class="pars_category_image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuD6tZqYnQfLBoUz7m56p-z7NocHqc7y0QR-vRagj0lVJQUtzx5UHrpS_bsaTNH8ayBfvNNz3oGZFGxENuitHWIwHeZoux6eouX6dR-skOETou-zTG0LJSaH4ahY-C3KcloPvLKBM4zEz05k4WzsVfoyAKJyxadmtYF1ycw-fO1L_xUrPwkBUZ82jxqmsfAhL-ILfmFJT7UyE_rlR9mBSaFcm_8Ka3ZzuUfsmZTVfLphVf3lhKYpDfDma8Xpt4mnF_bugUi5ZL6XD6A');" aria-label="A young girl with glasses smiling and pointing at a colorful building block tower."></div>
-                            <h3 class="pars_category_title">1st Grade</h3>
+                            <h3 class="pars_category_title"> اول دبستان </h3>
                         </a>
                     </div>
                     <div class="col-6 col-md-4">
                         <a href="#" class="pars_category_card">
                             <div class="pars_category_image" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuDTu6iitjpqYrAcNlkFLPUGBTqMLtTMRVFwN9yPJNEAy-lqqhtyHGbVl-Z4VKf88_yRdTHX5zmm7rqwVJ9tD9jN5qLufm1GuRisGQgX-o6lwNP3GTOkkFCdeRvack2ZpZsCiJREYEj0O52ROpWALLCQ9GjulB4ZUZk63S_FNw8qf8et6_F6lgGemcOup8SIbZMZ452QTRaUj4JLZWRW9drIK_agiAokWn4uW8SBfbbS_q-d-xLs8QaXYcxeUFzJ291Ikk1WVyi9K58');" aria-label="A smiling boy doing a science experiment with a test tube and a beaker."></div>
-                            <h3 class="pars_category_title">2nd Grade</h3>
+                            <h3 class="pars_category_title">اول دبستان</h3>
                         </a>
                     </div>
                     <div class="col-6 col-md-4">
@@ -186,6 +191,7 @@ get_header();
                     </div>
                 </div>
             </section>
+
         </div>
     </main>
 
