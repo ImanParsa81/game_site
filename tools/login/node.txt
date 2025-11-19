@@ -1,0 +1,86 @@
+require_once PATH . 'tools/login/login_func.php';
+require_once PATH . 'tools/login/ajax_login.php';
+
+
+    wp_enqueue_script("login_js", URL . "tools/login/login.js", array(), $version, true);
+    wp_localize_script('login_js', 'ajax', array(
+        'ajax_url' => admin_url('admin-ajax.php'),
+        'user_id' => get_user_id(),
+        'nonce' => wp_create_nonce('logout_nonce'),
+    ));
+
+    function get_user_id () {
+        if( is_user_logged_in() ) {
+            return get_current_user_id();
+        } else {
+            return null;
+        }
+    }
+
+
+
+//---------------------------------------------------------------------
+// code star framwork
+//---------------------------------------------------------------------
+
+
+CSF::createSection($prefix, array(
+    'title' => 'پنل یوزر',
+    'fields' => array(
+
+        array(
+            'id' => 'roboyad_user_panel_repeat',
+            'type' => 'repeater',
+            'title' => 'support : ',
+            'fields' => array(
+
+                array(
+                    'id' => 'roboyad_user_panel_repeat_name',
+                    'type' => 'text',
+                    'title' => 'نام',
+                ),
+
+
+                array(
+                    'id' => 'roboyad_user_panel_repeat_link',
+                    'type' => 'link',
+                    'title' => 'لینک',
+                ),
+
+                array(
+                    'id' => 'roboyad_user_panel_repeat_color',
+                    'type' => 'color',
+                    'title' => 'رنگ',
+                ),
+
+                array(
+                    'id' => 'roboyad_user_panel_repeat_icon',
+                    'type' => 'media',
+                    'title' => 'icon',
+                ),
+
+            ),
+        ),
+    )
+));
+
+
+
+//---------------------------------------------------------------------
+// css
+//---------------------------------------------------------------------
+
+wp_enqueue_style('classto_login', URL . '/tools/login/login.css', false);
+
+//---------------------------------------------------------------------
+// function.php
+//---------------------------------------------------------------------
+
+require_once PATH . 'tools/login/login_func.php';
+require_once PATH . 'tools/login/ajax_login.php';
+
+//---------------------------------------------------------------------
+// popup logout
+//---------------------------------------------------------------------
+
+get_template_part('tools/login/section', 'popup_logout');

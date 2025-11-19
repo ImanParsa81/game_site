@@ -1,0 +1,438 @@
+/* ---------------------------------------- */
+/* popup_louout_user_pupup */
+/* ---------------------------------------- */
+
+.louout_user_pupup_counter {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 50;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.louout_user_pupup {
+    background-color: white;
+    width: 100%;
+    max-width: 520px;
+    padding: 22px;
+    border-radius: 18px;
+}
+
+.louout_user_pupup p {
+    font-size: 25px;
+    width: 100%;
+    text-align: center;
+    margin-bottom: 31px;
+    line-height: 39px;
+    font-weight: 500;
+    color: #1E2D40;
+}
+
+.louout_user_pupup_buttems {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: 10px;
+}
+
+.louout_user_buttems_item {
+    width: 100%;
+    max-width: 170px;
+    border-radius: 8px;
+    padding: 9px;
+    font-size: 20px;
+    font-weight: 500;
+    border: 1px solid #2B6CB0;
+    background-color: #2B6CB0;
+    color: white;
+}
+
+.louout_user_buttems_item:hover {
+    cursor: pointer;
+}
+
+.louout_user_buttems_cansel {
+    background-color: white;
+    color: #2B6CB0;
+}
+
+@media (max-width: 427px) {
+
+    .louout_user_pupup {
+        padding: 15px;
+        border-radius: 8px;
+    }
+
+    .louout_user_pupup p {
+        font-size: 15px;
+        margin-bottom: 15px;
+    }
+
+    .louout_user_buttems_item {
+        max-width: 86px;
+        padding: 4px;
+        font-size: 15px;
+    }
+
+}
+
+
+/* ---------------------------------- */
+/* popup login */
+/* ---------------------------------- */
+
+.roboyad_login {
+    position: relative;
+    display: flex;
+}
+
+.roboyad_login_background_dark {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 55;
+}
+
+.roboyad_login_container {
+    position: fixed;
+    top: 0;
+    z-index: 60;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.roboyad_login_background {
+    width: 100%;
+    max-width: 650px;
+    padding: 12px
+}
+
+.roboyad_login_background_container_color {
+    background-color: white;
+    padding: 20px;
+    border-radius: 25px;
+    border: 1px solid #DAE1EA;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    position: relative;
+
+}
+
+.roboyad_login_background_close {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+
+.roboyad_login_background_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    scrollbar-width: thin;
+    /*scrollbar-color: #8380FF #f0f0ff;*/
+    scrollbar-color: #659edc #f0f0ff;
+    padding: 5px;
+}
+
+.roboyad_login_image_logo {
+    width: 100%;
+    max-width: 126px;
+    margin-bottom: 19px;
+}
+
+.roboyad_login_title_popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 8px;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.roboyad_login_title_popup p {
+    font-size: 19px;
+    font-weight: 600;
+    color: #36356C;
+    text-align: center;
+    text-wrap-mode: nowrap;
+}
+
+.roboyad_login_drow_line {
+    width: 100%;
+    max-width: 83px;
+    min-width: 10px;
+    height: 1px;
+}
+
+.roboyad_login_drow_line_right {
+    background: #36356C;
+    background: linear-gradient(270deg, rgba(54, 53, 108, 0) 0%, rgba(54, 53, 108, 1) 100%);
+}
+
+.roboyad_login_drow_line_left {
+    background: #36356C;
+    background: linear-gradient(90deg, rgba(54, 53, 108, 0) 0%, rgba(54, 53, 108, 1) 100%);
+}
+
+.roboyad_login_form {
+    width: 100%;
+    max-width: 390px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+    gap: 23px;
+}
+
+.roboyad_login_input_continaer {
+    width: 100%;
+    position: relative;
+    display: none;
+}
+
+.roboyad_login_input_continaer_phone_number.active {
+    display: block;
+}
+
+.roboyad_login_input_continaer_sms_code.active {
+    display: block;
+}
+
+.roboyad_login_input_continaer_name.active {
+    display: block;
+}
+
+.butten_action_login_item {
+    position: absolute;
+    left: 5px;
+    top: 6px;
+    font-size: 16px;
+    padding: 6px 11px;
+    border: none;
+    outline: none;
+    /*background-color: #8380FF;*/
+    background-color: #659edc;
+    border-radius: 8px;
+    color: white;
+    display: none;
+}
+
+.get_phone_butten.active {
+    display: block;
+}
+
+.butten_action_login_item:hover {
+    cursor: pointer;
+}
+
+.roboyad_login_label_timer {
+    position: absolute;
+    left: 5px;
+    top: 6px;
+    font-size: 16px;
+    padding: 6px 11px;
+    border: none;
+    outline: none;
+    /*background-color: #8380FF;*/
+    background-color: #659edc;
+    border-radius: 8px;
+    color: white;
+    display: none;
+}
+.roboyad_login_label_timer.active {
+    display: block;
+}
+
+.roboyad_login_input_item {
+    width: 100%;
+    outline: none;
+    padding: 11px 36px 11px 11px;
+    background-color: #F7F9FF;
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    font-size: 16px;
+    color: #000;
+}
+
+.roboyad_login_input_item::placeholder {
+    font-size: 16px;
+    color: #A6AFBC;
+}
+
+.roboyad_login_input_continaer svg{
+    position: absolute;
+    right: 8px;
+    top: 10px;
+}
+
+.roboyad_login_butten_submit {
+    width: 100%;
+    /*background-color: #7266D4;*/
+    background-color: #2B6CB0;
+    border-radius: 8px;
+    font-size: 20px;
+    color: white;
+    outline: none;
+    border: none;
+    padding: 10px;
+}
+
+.roboyad_login_box_Error{
+    background-color: #FFF8F9;
+    border: 1px solid #DC1D40;
+    border-radius: 8px;
+    width: 100%;
+    padding: 14px 11px;
+    display: none;
+    flex-direction: column;
+    gap: 10px !important;
+}
+
+.roboyad_login_box_Error.active {
+    display: flex;
+}
+
+.roboyad_login_box_Error_item {
+    display: none;
+    justify-content: start;
+    align-items: center;
+}
+
+.roboyad_login_box_Error p {
+    color: #DC1D40;
+    font-size: 14px;
+    padding-right: 6px;
+}
+
+
+.roboyad_login_background_scroll {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    overflow-y: auto;
+}
+
+.roboyad_login_background_scroll {
+    scrollbar-width: thin;
+    /*scrollbar-color: #8380FF #f1f1f1;*/
+    scrollbar-color: #659edc #f1f1f1;
+}
+
+
+.roboyad_login_box_Error_item_phone_number.active {
+    display: flex;
+}
+.roboyad_login_box_Error_item_sms_code.active {
+    display: flex;
+}
+.roboyad_login_box_Error_item_name.active {
+    display: flex;
+}
+.roboyad_login_box_Error_authentic.active {
+    display: flex;
+}
+.roboyad_login_box_sms_error.active {
+    display: flex;
+}
+
+.roboyad_user_panel_show_login {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+@media (max-width: 426px) {
+
+    .roboyad_login_background_container_color {
+        padding: 15px 5px;
+        border-radius: 16px;
+    }
+
+    .roboyad_login_background_container {
+        padding: 0px 7px;
+    }
+
+    .roboyad_login_image_logo {
+        max-width: 85px;
+        margin-bottom: 15px;
+    }
+
+    .roboyad_login_title_popup p {
+        font-size: 13px;
+    }
+
+
+    .roboyad_login_input_item {
+        padding: 11px 30px 7px 7px;
+        font-size: 16px;
+    }
+
+    .roboyad_login_input_item::placeholder {
+        font-size: 13px;
+    }
+
+    .roboyad_login_input_continaer svg {
+        right: 8px;
+        top: 12px;
+        width: 17px;
+        height: auto;
+    }
+
+    .butten_action_login_item {
+        font-size: 14px;
+        left: 3px;
+        top: 4px;
+        padding: 7px 12px;
+    }
+
+    .roboyad_login_background_close {
+        top: 1px;
+        left: 8px;
+    }
+
+    .roboyad_login_background_close svg {
+        width: 25px;
+        height: 25px;
+    }
+
+    .roboyad_login_form {
+        gap: 15px;
+    }
+
+    .roboyad_login_box_Error p {
+        font-size: 13px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
