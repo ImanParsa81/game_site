@@ -256,25 +256,18 @@
 
 }
 
-
 .item_how_to_work {
     margin: 0px;
 }
 
-
 @media  (max-width: 767px) {
-
     .pars_testimonial_tag {
         text-align: center;
     }
-
     .pars_step_card {
         padding: 10px 5px;
     }
-
 }
-
-
 
 .pars_testimonial_card {
     background-color: white;
