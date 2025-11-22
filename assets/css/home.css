@@ -128,10 +128,10 @@
     font-weight: 700;
     color: var(--text-dark);
     margin-bottom: 2rem;
-    text-align: center;
+    /*text-align: center;*/
 }
 
-@media (min-width: 576px) {
+@media (max-width: 767px) {
     .pars_section_title {
         text-align: center;
     }
@@ -172,15 +172,17 @@
     z-index: 1;
 }
 
-.pars_category_image::before {
-    content: '';
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);
-    z-index: 2;
-}
+/*.pars_category_image::before {*/
+/*    content: '';*/
+/*    position: absolute;*/
+/*    inset: 0;*/
+/*    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), transparent);*/
+/*    height: 20px;*/
+/*    z-index: 2;*/
+/*}*/
 
 .pars_category_title {
+    background: #00000029;
     position: absolute;
     bottom: 1rem;
     right: 1rem;
@@ -188,6 +190,8 @@
     font-size: 1.125rem;
     font-weight: 700;
     z-index: 3;
+    padding: 3px;
+    border-radius: 5px;
 }
 
 /* === How It Works === */
@@ -237,13 +241,40 @@
 }
 
 .pars_testimonial_tag {
-    font-size: 0.875rem;
+    /*font-size: 0.875rem;*/
+    /*font-weight: 700;*/
+    /*color: var(--primary);*/
+    /*text-align: center;*/
+    /*text-transform: uppercase;*/
+    /*letter-spacing: 0.05em;*/
+
+
+    font-size: 1.375rem;
     font-weight: 700;
-    color: var(--primary);
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
+    color: var(--text-dark);
+    margin-bottom: 2rem;
+
 }
+
+
+.item_how_to_work {
+    margin: 0px;
+}
+
+
+@media  (max-width: 767px) {
+
+    .pars_testimonial_tag {
+        text-align: center;
+    }
+
+    .pars_step_card {
+        padding: 10px 5px;
+    }
+
+}
+
+
 
 .pars_testimonial_card {
     background-color: white;
@@ -267,7 +298,6 @@
 }
 
 .pars_testimonial_quote {
-    font-style: italic;
     font-size: 0.875rem;
     color: var(--text-dark-muted);
     margin-bottom: 1rem;
